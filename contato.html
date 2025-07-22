@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario de Contato</title>
+  <link rel="stylesheet" href="style1.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  <script src="inicio.js" defer></script>
+</head>
+      
+<body>
+  <div id="header">
+        <div id="logo">
+            <img id="logoImg" src="images/logo.png" alt="Logo Nico Vrum Vrum">
+            <h1 id="tituloLogo">NICO VRUM VRUM</h1>
+        </div>
+        <button id="tema">Modo Escuro</button>
+    <div id="menu">
+           <ul class="listaMenu">
+                <li><a class="btn-menu servicos" href="index.html">inicio</a></li>
+                <li><a class="btn-menu inicio" href="inicio.html">principal</a></li>
+                <li><a class="btn-menu sobre" href="sobre.html">Sobre</a></li>
+                <li><a class="btn-menu produtos" href="produtos.html">Produtos</a></li>
+                <li><a class="btn-menu contato" href="contato.html">Contato</a></li>
+                <li><a class="btn-menu servicos" href="serviços.html">Serviços</a></li>
+            </ul>
+        </div>
+     </div>
+
+  <div class="container">
+    <h1>Entre em Contato Conosco</h1>
+    <p>Preencha o formulário abaixo para enviar uma mensagem.</p>
+  </div>
+  <form class="formulario-contato">
+    <h1>
+      Formulário de Contato
+    </h1>
+
+    <label for="nome">Nome Completo:</label>
+    <input type="text" id="nome" name="nome" required>
+
+    <label for="email">E-mail:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="telefone">Telefone:</label>
+    <input type="tel" id="telefone" name="telefone" required>
+
+    <label for="assunto">Assunto:</label>
+    <input type="text" id="assunto" name="assunto" required>
+
+    <label for="mensagem">Mensagem:</label>
+    <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+
+
+    
+    <fieldset>
+      <legend>Genero:</legend>
+      <label><input type="radio" name="genero" value="masculino"> Masculino</label>
+      <label><input type="radio" name="genero" value="feminino"> Feminino</label>
+      <label><input type="radio" name="genero" value="outro"> Outro</label>
+    </fieldset>
+
+
+
+    <fieldset>
+      <legend>Preferencias de Contato:</legend>
+      <label><input type="checkbox" name="preferencia" value="email"> Desejo receber notificações por e-mail</label>
+      <label><input type="checkbox" name="preferencia" value="sms"> Desejo receber notificações por SMS</label>
+      <label><input type="checkbox" name="preferencia" value="telefone"> Desejo ser contatado por telefone</label>
+    </fieldset>
+
+
+
+    <label for="servico">Escolha de Servico:</label>
+    <select id="servico" name="servico" required>
+      <option value="">Selecione uma opcao</option>
+      <option value="suporte">Suporte tecnico</option>
+      <option value="reclamacoes">Reclamacoess</option>
+      <option value="sugestoes">Sugestoes</option>
+      <option value="elogios">Elogios</option>
+      <option value="outro">Outro</option>
+    </select>
+
+
+
+    <div class="botoes">
+      <button type="submit">Enviar</button>
+      <button type="reset">Limpar</button>
+    </div>
+  </form>
+ 
+
+
+
+  <div class="redes-sociais">
+    <h3>Siga a gente nas redes:</h3>
+    <a href="https://www.instagram.com/nico_vrum" target="_blank"><i class="fab fa-instagram"></i> Instagram</a><br>
+    <a href="https://www.facebook.com/Nico Lanches" target="_blank"><i class="fab fa-facebook"></i> Facebook</a><br>
+    <a href="https://www.linkedin.com/in//nico-vrum-vrum-860082367" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+  </div>
+
+  <div class="voltar-container">
+    <a href="inicio.html" class="botao-voltar">Voltar</a>
+  </div>
+
+</body>
+</html>
